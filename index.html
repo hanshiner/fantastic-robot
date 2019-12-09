@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<header><title>Login</title></header>
+<head>
+	<title></title>
+</head>
+<body>
+<h3>Login to your account</h3>
+
+<form>
+	<label>Username</label>
+	<input type="text" placeholder="Enter your username" id="username">
+	<label>Password</label>
+	<input type="text" placeholder="Enter your password" id="password">
+	<input type="submit" value="Login" onclick="check(this.form)">
+</form>
+
+</body>
+
+<style type="text/css">
+	form{
+		background-color:  lightgray
+		padding: 20px;
+	}
+	input[type=text]{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		border:  1px;
+		box-sizing: border-box;
+	}
+	input[type = submit]{
+		width: 100%;
+		background-color: turquoise;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border-radius: 4px;
+	}
+</style>
+
+<script type="text/javascript">
+	function check(form){
+		if(form.username.value=="test" && form.password.value=="test"){
+			alert("Username and password accepted")
+		}
+		else{
+			alert("Wrong username and password")
+		}
+	}
+</script>
+</html>
